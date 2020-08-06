@@ -1,0 +1,35 @@
+.todo-list {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.list-element {
+    background: white;
+    padding: 5px 15px;
+    margin: 2px auto;
+}
+
+.task-creator-form {
+    padding: 20px 0;
+}
+
+.js-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.form-button {
+    background: teal;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    height: 32px;
+}
+
+.form-input {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    flex-basis: 80%;
+}
+
