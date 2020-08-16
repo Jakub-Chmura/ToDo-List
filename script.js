@@ -1,7 +1,5 @@
 {
-    const tasks = [
-        
-    ];
+    const tasks = [ ];
 
     const render = () => {
         let htmlString = "";
@@ -43,7 +41,7 @@
             document.getElementById("taskInput").focus(); //* ustawia focus na inpucie po naciśnięciu buttona
 
             if (newTaskContent === "") {
-
+                
                 return;
             }
 
