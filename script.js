@@ -1,13 +1,6 @@
 {
     const tasks = [
-        {
-            content: "zjeść japko",
-            done: true,
-        },
-        {
-            content: "opierdolić kiełbe",
-            done: false,
-        },
+        
     ];
 
     const render = () => {
@@ -34,8 +27,12 @@
             event.preventDefault();
 
             const newTaskContent = document.querySelector(".js-newTask").value.trim();
-         
-            if(newTaskContent === "") {
+            document.querySelector(".js-newTask").value = ""; //* ta linijka czyści input po dodaniu zadania
+
+            document.getElementById("taskInput").focus(); //* ustawia focus na inpucie po naciśnięciu buttona
+
+            if (newTaskContent === "") {
+
                 return;
             }
 
@@ -43,13 +40,9 @@
                 content: newTaskContent,
             })
 
-            
-
             render();
         });
     };
 
     init();
-
-    
 }
