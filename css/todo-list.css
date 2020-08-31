@@ -5,7 +5,7 @@
 
 .list-element {
     background: white;
-    padding: 5px 15px;
+    padding: 5px 35px;
     margin: 2px auto;
 }
 
@@ -23,7 +23,6 @@
     background: teal;
     color: white;
     padding: 5px 10px;
-    border: none;
 }
 
 .form-button:hover {
@@ -34,5 +33,40 @@
     border: 1px solid #ccc;
     padding: 3px 10px;
     flex-basis: 80%;
+}
+
+.js-tasks {
+    list-style: none;
+}
+
+.tasks-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li {
+    margin: 35px auto;
+}
+
+/** buttons**/
+
+.btn {
+    border: none;
+}
+
+.js-done {
+    background: green;
+    padding: 5px;
+    height: 35px;
+    width: 35px;
+
+}
+
+.js-remove {
+    background: rgb(230, 13, 13);
+    padding: 5px;
+    height: 35px;
+    width: 35px;
 }
 
