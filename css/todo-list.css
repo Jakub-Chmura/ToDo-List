@@ -17,6 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .form-button {
@@ -25,8 +26,16 @@
     padding: 5px 10px;
 }
 
-.form-button:hover {
-    cursor: pointer;
+@media(max-width: 740px) {
+    .form-button {
+        margin: 10px auto;
+        flex-basis: 80%;
+        height: 40px;
+    }
+
+    .form-input {
+        height: 40px;
+    }
 }
 
 .form-input {
@@ -37,16 +46,24 @@
 
 .js-tasks {
     list-style: none;
+    padding-left: 0;
+    flex-basis: 100%;
+    margin: 0 auto;
 }
 
 .tasks-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 li {
     margin: 35px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
 }
 
 /** buttons**/
@@ -55,18 +72,39 @@ li {
     border: none;
 }
 
+.btn:hover {
+    cursor: pointer;
+}
+
 .js-done {
     background: green;
     padding: 5px;
     height: 35px;
     width: 35px;
+    margin: 0 15px;
+    
+}
 
+.js-done:hover {
+    background: rgb(1, 153, 1);
+}
+
+.js-done:active {
+    background: rgb(1, 184, 1);
 }
 
 .js-remove {
-    background: rgb(230, 13, 13);
+    background: rgb(207, 6, 6);
     padding: 5px;
     height: 35px;
     width: 35px;
+    margin: 0 15px;
 }
 
+.js-remove:hover {
+    background: rgb(236, 1, 1)
+}
+
+.js-remove:active {
+    background: rgb(255, 0, 0);
+}

@@ -46,8 +46,10 @@
         <li${task.done ? " style=\"text-decoration: line-through\"" : ""}>
         <button class="js-done btn"></button>
         ${task.content}
-        <button class="js-remove btn"></button>
-        </li>
+        <button class="js-remove btn">
+        ✖
+    </button>
+</li>
         `;
         }
 
